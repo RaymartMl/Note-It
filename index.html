@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vendor/aos/aos.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Note It! | Group 0</title>
+  </head>
+  <body class="container">
+    <header>
+      <a href="#">Note It!</a>
+      <div class="header-list">
+        <a href="#" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./app.html" class="cta header-link">Take a Note !</a>
+      </div>
+    </header>
+
+    <main id="note-main">
+      <section class="hero">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>
+            Taking Notes just got <span class="hero-highlight">Easier</span>
+          </h1>
+          <p>Get what you need, when you need it.</p>
+
+          <div class="hero-btn">
+            <a href="./app.html" class="hero-cta">Get Started</a>
+            <a href="#features" class="hero-learn"
+              >Learn More
+              <svg
+                class="down-icon"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-img-wrapper" data-aos="fade-left">
+          <img src="./images/noteit.png" alt="note it app" class="hero-img" />
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <h2>Features</h2>
+        <!-- card grid -->
+        <div class="features-grid">
+          <div class="feature" data-aos="fade-up">
+            <img src="./images/speed.svg" alt="speed icon" />
+            <h3>Fast</h3>
+            <p>
+              Statically rendered with Netlify cdn and using LocalStorage or
+              storing your notes.
+            </p>
+          </div>
+          <div class="feature" data-aos="fade-up">
+            <img src="./images/responsive.svg" alt="responsive icon" />
+            <h3>Responsive</h3>
+            <p>
+              Using modern web to make sure that all types of device can enjoy
+              Note it.
+            </p>
+          </div>
+          <div class="feature" data-aos="fade-up">
+            <img src="./images/minimalist.svg" alt="minimalist icon" />
+            <h3>Minimalist</h3>
+            <p>
+              Less visual clatter for more enjoyable and smoother experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="try">
+        <h2>Try Note It! Today</h2>
+        <p>Get started for free, and experience awesome noting experience!</p>
+        <a href="./app.html">Note It!</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Made with ❤️ by <a href="./about.html" class="header-link">Group 0</a>
+      </p>
+    </footer>
+
+    <script src="./vendor/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

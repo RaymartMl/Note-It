@@ -1,14 +1,16 @@
 html {
   --gray-200: #94a3b8;
   --gray-500: #475569;
-  --yellow: #ffc806;
+  --gray-800: #2f3846;
+  --yellow: #ffd746;
   --white: white;
   --red: red;
 
-  --background-color: var(--white);
+  --background-color: var(--whiteyellow);
   --primary-color: var(--yellow);
   --text-color: var(--gray-500);
-  --heading-color: var(--gray-200);
+  --heading-color: var(--gray-800);
+  --heading-color-2: var(--gray-200);
 
   --heading-weight: 700;
   --header-letter-spacing: 0.05em;
@@ -35,6 +37,15 @@ body {
   color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
 /* header */
 header {
   display: flex;
@@ -45,7 +56,7 @@ header {
 }
 
 .header-list {
-  color: var(--heading-color);
+  color: var(--heading-color-2);
 }
 
 .header-list > .active,
@@ -75,7 +86,12 @@ footer {
   letter-spacing: var(--header-letter-spacing);
 }
 
-/* aaaa */
 .header-link {
   border-bottom: 3px solid var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  header .cta {
+    margin-left: 1rem;
+  }
 }

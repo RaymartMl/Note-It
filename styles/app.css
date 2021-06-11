@@ -19,7 +19,7 @@
 }
 
 .note-group > input::placeholder {
-  color: var(--heading-color);
+  color: var(--heading-color-2);
 }
 
 .note-group > textarea {
@@ -27,6 +27,10 @@
   padding: 0.5rem;
   outline: none;
   font-size: 1.2rem;
+}
+
+.note-group > textarea::placeholder {
+  color: var(--heading-color-2);
 }
 
 .note-form > button {
@@ -75,6 +79,9 @@
 }
 
 .note-body {
+  font-size: 1.2rem;
+  outline: none;
+  width: 100%;
   overflow-wrap: break-word;
 }
 

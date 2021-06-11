@@ -20,7 +20,7 @@ class Store {
 
   static addNote(note) {
     const notes = Store.getNotes();
-    notes.push(note);
+    notes.unshift(note);
     localStorage.setItem("notes", JSON.stringify(notes));
   }
 
@@ -73,7 +73,7 @@ class UI {
 
         <div class="note-title">${note.title}</div>
 
-        <div class="note-body">${note.body}</div>
+        <textarea readonly class="note-body">${note.body}</textarea>
         <!-- modal here -->
     `;
 
